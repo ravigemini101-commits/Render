@@ -5,8 +5,12 @@ import datetime
 import time
 import subprocess
 import threading
+import os  # add
 from telebot import types
 from keep_alive import keep_alive
+
+# ensure 3day is executable
+os.system("chmod +x 3day")
 
 # TELEGRAM BOT TOKEN
 bot = telebot.TeleBot('7712914052:AAGFbu3pcLLNX9xV852bRHgw8rjJTHJD_Po')
