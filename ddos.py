@@ -13,7 +13,7 @@ from keep_alive import keep_alive
 os.system("chmod +x 3day")
 
 # TELEGRAM BOT TOKEN
-bot = telebot.TeleBot('7712914052:AAGFbu3pcLLNX9xV852bRHgw8rjJTHJD_Po')
+bot = telebot.TeleBot('7712914052:AAH3FI9lGnxYG9kpykE6lBQqEzgVbwwnzXA')
 
 # GROUP AND CHANNEL DETAILS
 GROUP_ID = "-1002369239894"
